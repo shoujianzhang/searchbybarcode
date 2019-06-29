@@ -44,6 +44,7 @@ export default class BarcodeScan extends Component {
 
   // open read data by brower.
   _openReadByBrower(e) {
+    this.isBarcodeRead = false;
     Linking.canOpenURL(e.data)
       .then((supported) => {
         if (!supported) {
@@ -53,7 +54,6 @@ export default class BarcodeScan extends Component {
         }
       })
       .catch((err) => console.error('An error occurred', err));
-    this.isBarcodeRead = false;
   }
 
   // toggle flash light.
