@@ -9,7 +9,7 @@
   "dependencies": {
     "native-base": "^2.12.1",
     "react": "16.8.3",
-    "react-native": "0.59.9",
+    "react-native": "0.62.3",
     "react-native-barcode-mask": "^1.0.5",
     "react-native-camera": "^2.11.0"
   },
